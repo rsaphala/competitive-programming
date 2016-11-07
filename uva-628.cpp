@@ -10,7 +10,7 @@ int idx;
 vector<int>numbers;
 vector<string>words;
 
-void print(){
+void print(){ 
     int j = 0;
     for (int i = 0;i<ptrn.size();i++){
         if (ptrn[i] == '#') cout<<words[idx];
