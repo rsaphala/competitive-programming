@@ -73,7 +73,20 @@ void reverse(){
         curr = next;
     }
     head = prev;
+}
 
+void reverseDouble(){
+
+    Node *temp = NULL;
+    Node *curr = head;
+    while(curr){
+        temp = curr->prev;
+        curr->prev = curr->next;
+        curr->next = temp;
+        temp = curr;
+        curr = curr->prev;
+    }
+    head = temp;
 }
 
 int main(){
